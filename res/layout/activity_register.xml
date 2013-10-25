@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/first_name_edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text"
+        android:hint="Firstname"
+        android:singleLine="true"
+        android:textColor="#E1F0F3"
+        android:textColorHint="#1d516d"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/last_name_edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text"
+        android:hint="Lastname"
+        android:singleLine="true"
+        android:textColor="#E1F0F3"
+        android:textColorHint="#1d516d"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/middle_name_edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text"
+        android:hint="Middlename"
+        android:singleLine="true"
+        android:textColor="#E1F0F3"
+        android:textColorHint="#1d516d"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/password_edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textColor="#E1F0F3"
+        android:textColorHint="#1d516d"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/confirm_password_edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textColor="#E1F0F3"
+        android:textColorHint="#1d516d"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/position_radio"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/nurse_radio_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@drawable/radio_button_selector"
+            android:text="Nurse"
+            android:textColor="#E1F0F3"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/physician_radio_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@drawable/radio_button_selector"
+            android:text="Physician"
+            android:textColor="#E1F0F3"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/ward_form"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/ward_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="Ward:  "
+            android:textColor="#E1F0F3"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/ward_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ward_text_view"
+            android:background="@drawable/button_selector"
+            android:textColor="#777777" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_selector"
+        android:text="Register"
+        android:textColor="#777777"
+        android:textSize="16sp" />
+
+</LinearLayout>

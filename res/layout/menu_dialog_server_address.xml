@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|right"
+    android:orientation="vertical"
+    android:padding="30dp" >
+
+    <EditText
+        android:id="@+id/server_address"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/edit_text"
+        android:hint="Server Address"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/save_server_address"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:background="@drawable/button_selector"
+        android:text="Save"
+        android:textSize="14sp" />
+
+</LinearLayout>

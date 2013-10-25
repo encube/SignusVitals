@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/texture_background" >
+
+    <LinearLayout
+        android:id="@+id/patient_name_searchform"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="8dp"
+        android:background="#fcfcfc"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/patient_list_search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text"
+            android:hint="Patient Name..."
+            android:singleLine="true"
+            android:textColor="#393939"
+            android:textColorHint="#585858"
+            android:textSize="16sp"
+            android:typeface="sans" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/patient_name_searchform"
+        android:background="#e9e9eb"
+        android:padding="3dp"
+        android:text="PATIENT LIST"
+        android:textColor="#808080"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/label" >
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+</RelativeLayout>

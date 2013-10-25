@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="top"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="125dip"
+        android:layout_height="125dip"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/logolarge" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/login_to_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/loginForm"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="7dp"
+            android:text="Please login to continue"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/loginForm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/username_edit_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/edit_text"
+                android:hint="Username"
+                android:singleLine="true"
+                android:textColor="#fafafa"
+                android:textColorHint="#1d516d"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/password_edit_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username_edit_text"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edit_text"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="#fafafa"
+                android:textColorHint="#1d516d"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/register_button"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/password_edit_text"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_selector"
+                android:text="Register"
+                android:textColor="#777777"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/log_in_button"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/password_edit_text"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="35dp"
+                android:layout_toRightOf="@+id/register_button"
+                android:background="@drawable/button_selector"
+                android:text="Login"
+                android:textColor="#777777"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/splash_screen_progress_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="7dp"
+            android:text="Requesting Server Access..."
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <ProgressBar
+            android:id="@+id/splash_screen_progress_bar"
+            style="@style/CustomProgressBar"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp" />
+    </RelativeLayout>
+
+</LinearLayout>

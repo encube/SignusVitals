@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_focused="false" android:state_pressed="false" android:state_selected="true"><layer-list>
+            <item><shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+                    <solid android:color="#2b749e" />
+                </shape></item>
+            <item android:bottom="4dip"><shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+                    <solid android:color="@android:color/white" />
+                </shape></item>
+        </layer-list></item>
+    <item android:drawable="@android:color/transparent" android:state_focused="false" android:state_pressed="false" android:state_selected="false"/>
+    <item android:state_pressed="true"><layer-list>
+            <item><shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+                    <solid android:color="#2b749e" />
+                </shape></item>
+            <item android:bottom="4dip"><shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+                    <solid android:color="@android:color/white" />
+                </shape></item>
+        </layer-list></item>
+    <item android:drawable="@android:color/transparent" android:state_focused="true" android:state_pressed="false" android:state_selected="true"/>
+
+</selector>

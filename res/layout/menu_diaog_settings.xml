@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center|right"
+    android:orientation="vertical"
+    android:padding="30dp" >
+
+    <ToggleButton
+        android:id="@+id/notification_switch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textOff="Notification Service Inactive"
+        android:textOn="Notification Service Active"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:paddingTop="10dp"
+        android:text="Change Password:"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/current_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/edit_text"
+        android:hint="Current Password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/new_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/edit_text"
+        android:hint="New Password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/confirm_new_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/edit_text"
+        android:hint="Confirm New Password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/button_settings_save"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/button_selector"
+        android:text="Save"
+        android:textSize="14sp" />
+
+</LinearLayout>

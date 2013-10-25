@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_selector"
+    android:orientation="vertical"
+    android:paddingBottom="5dp" >
+
+    <TextView
+        android:id="@+id/record_date_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="8dip"
+        android:text="12-12-12 00:00"
+        android:textColor="#2b749e"
+        android:textSize="16sp"
+        android:typeface="sans" />
+
+    <LinearLayout
+        android:id="@+id/record_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lock_img"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/BP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Pressure: 120/60"
+            android:textColor="#343434"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/TR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temperature: 34.8"
+            android:textColor="#343434"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/RR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Respiration: 123"
+            android:textColor="#343434"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/PR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pulse: 231"
+            android:textColor="#343434"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/nurseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="by: chu chu"
+            android:textColor="#2b749e"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/lock_img"
+        android:layout_below="@+id/lock_img"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/lock_button"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/button_selector"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="lock"
+            android:textColor="#777777"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/edit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/button_selector"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="edit"
+            android:textColor="#777777"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/lock_img"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/unlocked" />
+
+</RelativeLayout>

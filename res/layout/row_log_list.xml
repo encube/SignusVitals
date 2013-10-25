@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="10dip" >
+
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip" >
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:src="@drawable/vitals_log" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Lorem Ipsum has recorded Lorem Ipsum&apos;s vitals."
+        android:textColor="#2b749e"
+        android:textSize="15sp"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/log"
+        android:text="Today, 4:51 PM"
+        android:textColor="#343434"
+        android:textSize="12sp"
+        android:typeface="sans" />
+
+</RelativeLayout>

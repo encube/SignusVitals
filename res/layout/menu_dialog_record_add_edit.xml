@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="30dp" >
+
+    <EditText
+        android:id="@+id/PR_edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/edit_text"
+        android:hint="Pulse Rate (bpm)"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:textColor="#343434"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/RR_edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/PR_edit_text"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/edit_text"
+        android:hint="Respiration Rate (cpm)"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:textColor="#343434"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/TR_edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/RR_edit_text"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/edit_text"
+        android:hint="Temperature (C)"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:textColor="#343434"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/BP_edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TR_edit_text"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/edit_text"
+        android:digits="1234567890/"
+        android:hint="Blood Pressure (Systolic/Diastolic)"
+        android:inputType="phone"
+        android:singleLine="true"
+        android:textColor="#343434"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/record_button"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/BP_edit_text"
+        android:background="@drawable/button_selector"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Record"
+        android:textColor="#777777"
+        android:textSize="14sp" />
+
+</RelativeLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/texture_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:background="#2b749e" >
+
+        <ImageView
+            android:id="@+id/graph_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_selector"
+            android:padding="2dp"
+            android:src="@drawable/blue_logo" />
+
+        <TextView
+            android:id="@+id/name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/graph_image"
+            android:paddingLeft="10dp"
+            android:text="Name: "
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/name_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/graph_image"
+            android:layout_toRightOf="@+id/name_label"
+            android:text="Anne Nimalle"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bed_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/name_value"
+            android:paddingLeft="10dp"
+            android:text="Room: "
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/bed_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_value"
+            android:layout_toRightOf="@+id/bed_label"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/date_admitted_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/bed_value"
+            android:paddingLeft="10dp"
+            android:text="Admitted: "
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/date_admitted_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bed_value"
+            android:layout_toRightOf="@+id/date_admitted_label"
+            android:text="10-10-10"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/diagnosis_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/date_admitted_value"
+            android:paddingLeft="10dp"
+            android:text="Diagnosis: "
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/diagnosis_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date_admitted_value"
+            android:layout_toRightOf="@+id/diagnosis_label"
+            android:text="Fever"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/top_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="17dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/top_shadow_img" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="17dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bottom_shadow_img" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/vs_record_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#e9e9eb"
+        android:padding="3dp"
+        android:text="VITAL RECORD"
+        android:textColor="#808080"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/vitals_entry_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:fadingEdge="none" />
+
+</LinearLayout>
